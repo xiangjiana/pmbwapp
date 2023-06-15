@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="OB包网">
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="OB包网">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icons/Icon-192.png" type="image/x-icon" />
+
+    <link rel="manifest" href="manifest.json">
+    <title>OB包网</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        #app {
+            width: 100vw;
+            height: 100%;
+            flex: 1;
+        }
+
+        @media screen and (min-width: 500px) {
+            #app {
+                width: 500px;
+            }
+        }
+    </style>
+    <script>
+        //判断访问终端
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                    weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+                    qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return decodeURIComponent(r[2]);
+            }
+            return '';
+        }
+        sessionStorage.setItem("i_code", getQueryString("i_code"));
+        //如果不是移动端打开的，那么重定向到pc版本，开发阶段暂时去掉
+        // if (!browser.versions.mobile) {
+        //     window.location.href = "https://obqj-web-pc.test.zhanggao223.com/home";
+        // }
+        //一些第三方会比如真人游戏会调用window.top来发消息，导致内嵌的h5收不到，这里转发一下
+        window.addEventListener("message",(e)=>{
+            let data=e.data;
+            if(document.getElementById("app")){
+                document.getElementById("app").contentWindow.postMessage(data, "*");
+            }
+        })
+        //禁止弹出“是否添加到主屏幕”
+        window.addEventListener("beforeinstallprompt", (e => {
+            e.preventDefault();
+        }));
+    </script>
+</head>
+
+<body>
+    <iframe id="app" frameborder="0"></iframe>
+    <script>
+        //如果是移动端那么直接打开inner.html，不用iframe嵌套
+        if (browser.versions.mobile || browser.versions.android || browser.versions.ios) {
+            if (window.orientation == 90 || window.orientation == -90) {
+                setInterval(() => {
+                    if (window.orientation == 0) {
+                        window.location.href = window.location.href;
+                    }
+                }, 1000);
+            } else {
+                window.location.href = "./inner.html?t=" + new Date().getTime() + "&i_code=" + getQueryString("i_code")+ "&lang=" + getQueryString("lang");
+            }
+        } else {
+            document.getElementById("app").src = "./inner.html?t=" + new Date().getTime() + "&i_code=" + getQueryString("i_code")+ "&lang=" + getQueryString("lang");
+        }
+    </script>
+</body>
+<script src="./screen_orientation.js?t=1"></script>
+
+</html>

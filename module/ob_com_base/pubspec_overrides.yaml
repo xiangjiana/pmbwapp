@@ -1,0 +1,22 @@
+# melos_managed_dependency_overrides: config,exception,models,ob_com_png,ob_component,params,repository,user,js,lottie,xml,collection
+dependency_overrides:
+  config:
+    path: ../../api/config
+  exception:
+    path: ../../api/exception
+  models:
+    path: ../../api/models
+  ob_com_png:
+    path: ../ob_com_png
+  ob_component:
+    path: ../../ui/ob-components
+  params:
+    path: ../../api/params
+  repository:
+    path: ../ob_network_service
+  user:
+    path: ../../api/user
+  js: 0.6.7
+  lottie: 2.3.1
+  xml: 6.2.2
+  collection: 1.17.0

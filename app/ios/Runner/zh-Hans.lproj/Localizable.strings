@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Runner
+
+  Created by Tmoson on 2022/10/10.
+  
+*/
+
+
+"alert" = "提示";
+"alert_know" = "我知道了";
+"full_screen" = "全屏";
+"home_icon_transfer" = "转账";
+"confirm_exit_game" = "您确定要离开游戏?";
+"cancel" = "取消";
+"cancel_in" = "直接进入";
+"confirm" = "确定";
+"submit" = "提交";
+"transfer_existing" = "现有";
+"deposit_one_click_recycling" = "一键回收";
+"deposit_recycling" = "回收中...";
+"my_wallet_turn_off_the_automatic_carry_in_amount" = "是否关闭自动带入金额";
+"my_wallet_enable_automatic_transfer_of_amount" = "是否开启自动带入金额";
+"my_wallet_please_select_a_wallet" = "请选择钱包";
+"transfer_successful_transfer" = "转账成功";
+"transfer_unable_to_transfer_in_during_venue_maintenance" = "场馆维护中无法转入";
+"transfer_unable_to_transfer_out_during_venue_maintenance" = "场馆维护中无法转出";
+"transfer_in_activities_cannot_be_transferred_out" = "活动参与中不可转出";
+"transfer_cannot_be_transferred_out" = "已参加场馆活动%@不可转出";
+"transfer_will_be_carried_over_to_the_entering_venue" = "中心钱包和可回收的场馆金额将被带入到进入的场馆中";
+"transfer_bring_in_the_amount" = "进入场馆时自动带入金额";
+"transfer_select_wallet" = "选择钱包";
+"from" = "从";
+"to" = "到";
+"transfer_to_be_selected_to_transfer_out_wallet" = "待选择转出钱包";
+"transfer_click_to_select" = "点击选择";
+"you_are_join_activity_can_not_transfer_out" = "您还在参与活动，转入金额后，流水未达标将不可转出！";
+"mine_center_wallet" = "中心钱包";
+"mine_center_wallet_transfer_existing" = "中心钱包现有";
+"agent_transfer_transfer_money" = "转账金额";
+"vip_level_trans_all" = "全部金额";
+"withdraw_maximum_amount" = "全部金额";
+"vip_level_trans_hintText" = "请输入";
+"vip_level_trans_confirm" = "立即转账";
+"withdraw_flowing_water_details" = "流水详情";
+"vip_level_submit_active" = "参与活动";
+"my_wallet_required_running_water" = "所需流水";
+"withdraw_flow_has_been_completed" = "已完成流水";
+"water_flow_content_tips" = "1.完成流水后可将场馆钱转出至中心钱包\n2.流水未完成前，转账到场馆将会提高流水要求，且钱未满足所需流水将无法转出\n3.活动场馆的流水不与其他活动流水重复计算";
+"transfer_in_amount" = "转入金额";
+"search_in_maintenance" = "维护中";
+"need_any_help" = "如需帮助，请 ";
+"contact_customer_service" = "联系客服";
+"game_join" = "进入";
+"maintain" = "维护";
+"game_in_maintain" = "该场馆正在维护中，请选择其他场馆";
+"game_in_maintain2" = "该游戏正在维护中，请选择其他游戏";

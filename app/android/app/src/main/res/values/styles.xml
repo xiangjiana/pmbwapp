@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Theme applied to the Android Window while the process is starting when the OS's Dark Mode setting is off -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             Flutter draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background2</item>
+        <!--设置顶部状态栏是否为透明-->
+        <!--        <item name="android:windowTranslucentStatus">false</item>-->
+        <!--Android 5.x开始需要把颜色设置透明，否则顶部导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@color/color_01000000</item>
+        <item name="android:navigationBarColor">@color/color_151E25</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <!--设置顶部状态栏和底部导航栏是否为透明-->
+        <!--        <item name="android:windowTranslucentNavigation">true</item>-->
+        <!--<item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>-->
+
+    </style>
+    <!-- Theme applied to the Android Window as soon as the process has started.
+         This theme determines the color of the Android Window while your
+         Flutter UI initializes, as well as behind your Flutter UI while its
+         running.
+
+         This Theme is only used starting with V2 of Flutter's Android embedding. -->
+
+    <style name="Loading" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置背景色 透明-->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置是否显示背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置背景透明度 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+        <!-- 设置点击空白不消失 -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="LoadingActivityStyle" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="activity_dialog_style" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <!--        <item name="windowNoTitle">true</item>-->
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+        <!--        <item name="android:windowContentOverlay">@null</item>-->
+        <!--        <item name="android:windowIsFloating">true</item>-->
+        <!--        <item name="android:windowFrame">@null</item>-->
+        <!--    -->
+        <!--        <item name="android:backgroundDimEnabled">true</item>-->
+        <!--        <item name="android:windowAnimationStyle">@null</item>-->
+    </style>
+    <!--底部弹框 样式-->
+    <style name="no_background" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/fromBottomToUp</item>
+    </style>
+
+    <style name="fromBottomToUp" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/ybcp_enter_translate_dialog</item>
+        <item name="android:windowExitAnimation">@anim/ybcp_exit_translate_dialog</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="custom_keyboard_textview">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
+

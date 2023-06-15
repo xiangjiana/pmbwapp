@@ -1,0 +1,7 @@
+enum Period {
+  TODAY,
+  YESTERDAY,
+  RECENT_WEEK,
+  RECENT_MONTH,
+  CUSTOM,
+}

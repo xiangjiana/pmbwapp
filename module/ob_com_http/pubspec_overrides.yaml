@@ -1,0 +1,7 @@
+# melos_managed_dependency_overrides: models,repository,collection
+dependency_overrides:
+  models:
+    path: ../../api/models
+  repository:
+    path: ../ob_network_service
+  collection: 1.17.0

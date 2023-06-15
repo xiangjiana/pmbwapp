@@ -1,0 +1,47 @@
+name: selectDeposit # $group/$name_$method.dart
+group: depositAndWithdrawal # $group_apis.dart
+method: post # [get, post]
+uri: /depositAndWithdrawal/selectDeposit # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+req:
+  {
+    "createdAtEnd": "1975-10-02 15:19:21",
+    "createdAtStart": "2017-01-02 09:55:57",
+    "pageNum": 51301461,
+    "pageSize": 50404714,
+    "payTypes":
+      ["Ut Duis dolor", "ullamco mollit ea", "in in sit qui", "nostrud minim"],
+    "orderStatus": 69261562,
+  }
+
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp:
+  {
+    "pageNum": 0,
+    "pageSize": 0,
+    "record":
+      [
+        {
+          "daily": "string",
+          "details":
+            [
+              {
+                "appStatus": 10,
+                "bizType": 0,
+                "createdAt": "2021-09-10T06:43:07.262Z",
+                "id": "string",
+                "orderAmount": 10.0,
+                "orderStatus": 0,
+                "payType": 0,
+                "remark": "string",
+                "thirdOrderNo": "string"
+              },
+            ],
+        },
+      ],
+    "summary": {},
+    "totalPage": 0,
+    "totalRecord": 0,
+  }

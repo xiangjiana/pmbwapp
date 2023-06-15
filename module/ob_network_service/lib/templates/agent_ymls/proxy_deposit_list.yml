@@ -1,0 +1,36 @@
+name: proxyDepositList # $group/$name_$method.dart
+group: proxy # $group_apis.dart
+method: post # [get, post]
+uri: /proxy/deposit/list # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp: {
+  "payTypes": [
+  {
+    "depositMaxAmount": 30000,
+    "depositMinAmount": 100,
+    "fixedAmount": [
+      "100.00",
+      "200.00",
+      "300.00",
+      "400.00",
+      "456.00",
+      "500.00",
+      "555.00",
+      "900.00",
+      "980.00",
+      "1150.00",
+      "2000.00"
+    ],
+    "linkType": 0,
+    "dcProtocol": [
+      "0",
+      "1",
+      "2"
+    ],
+    "payTypeId": 911
+  }]
+}

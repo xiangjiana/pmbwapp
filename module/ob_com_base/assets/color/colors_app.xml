@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--本xml为app所需颜色，主题色之外的颜色在此配置-->
+
+    <!--主题外的颜色在此定义-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#FF2196F3</color>
+    <color name="red">#FFF44336</color>
+    <color name="green">#FF4CAF50</color>
+    <color name="wallet_tool_bg">#1D2933</color>
+
+
+    <!--随机测试颜色-->
+
+
+</resources>

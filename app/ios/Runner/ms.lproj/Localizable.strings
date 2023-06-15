@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Runner
+
+  Created by Tmoson on 2022/10/10.
+  
+*/
+
+
+"alert" = "Petua";
+"alert_know" = "saya faham";
+"full_screen" = "Full screen";
+"home_icon_transfer" = "Pemindahan";
+"confirm_exit_game" = "Adakah anda pasti mahu meninggalkan permainan?";
+"cancel" = "Batal";
+"cancel_in" = "Batal";
+"confirm" = "sahkan";
+"submit" = "Hantar";
+"transfer_existing" = "sedia ada";
+"deposit_one_click_recycling" = "Kitar Semula Satu Klik";
+"deposit_recycling" = "Pemulihan sedang berjalan...";
+"my_wallet_turn_off_the_automatic_carry_in_amount" = "Sama ada untuk mematikan jumlah automatik yang dibawa masuk";
+"my_wallet_enable_automatic_transfer_of_amount" = "Sama ada hendak menghidupkan jumlah automatik";
+"my_wallet_please_select_a_wallet" = "Klik untuk memilih";
+"transfer_successful_transfer" = "Pemindahan yang berjaya";
+"transfer_in_activities_cannot_be_transferred_out" = "Tidak boleh berpindah keluar di tengah-tengah aktiviti yang mengambil bahagian";
+"transfer_unable_to_transfer_in_during_venue_maintenance" = "Tidak boleh memindahkan di tengah-tengah penyelenggaraan tempat";
+"transfer_unable_to_transfer_out_during_venue_maintenance" = "Tidak boleh berpindah keluar semasa penyelenggaraan tempat";
+"transfer_cannot_be_transferred_out" = "Anda tidak boleh memindahkan keluar daripada %@ di tempat yang mengambil bahagian";
+"transfer_will_be_carried_over_to_the_entering_venue" = "Dompet tengah dan jumlah tempat yang boleh diperolehi akan dibawa ke tempat yang dimasukkan";
+"transfer_bring_in_the_amount" = "Jumlah itu dibawa masuk secara automatik apabila memasuki tempat";
+"transfer_select_wallet" = "Pilih Wallet";
+"from" = "daripada";
+"to" = "kepada";
+"transfer_to_be_selected_to_transfer_out_wallet" = "Untuk dipilih untuk dipindahkan keluar dari dompet";
+"transfer_click_to_select" = "Klik untuk memilih";
+"you_are_join_activity_can_not_transfer_out" = "Anda masih menyertai aktiviti, selepas jumlah pemindahan, aliran air tidak mencapai standard tidak akan dipindahkan keluar!";
+"mine_center_wallet" = "Dompet Tengah";
+"mine_center_wallet_transfer_existing" = "Dompet Tengah Sedia Ada";
+"agent_transfer_transfer_money" = "Jumlah Pemindahan";
+"vip_level_trans_all" = "Jumlah penuh";
+"withdraw_maximum_amount" = "Jumlah maksimum";
+"vip_level_trans_hintText" = "Sila masukkan";
+"vip_level_trans_confirm" = "Pindah Sekarang";
+"withdraw_flowing_water_details" = "Butiran Penstriman";
+"vip_level_submit_active" = "Mengambil bahagian dalam aktiviti";
+"my_wallet_required_running_water" = "Aliran yang Diperlukan";
+"withdraw_flow_has_been_completed" = "Selesai Strim";
+"water_flow_content_tips" = "1.完成流水后可将场馆钱转出至中心钱包\n2.流水未完成前，转账到场馆将会提高流水要求，且钱未满足所需流水将无法转出\n3.活动场馆的流水不与其他活动流水重复计算";
+"transfer_in_amount" = "Jumlah Pemindahan";
+"search_in_maintenance" = "Di bawah penyelenggaraan";
+"need_any_help" = "Untuk bantuan, sila";
+"contact_customer_service" = "Hubungi Khidmat Pelanggan";
+"game_join" = "Masuk";
+"maintain" = "Penyelenggaraan";
+"game_in_maintain" = "该场馆正在维护中，请选择其他场馆";
+"game_in_maintain2" = "该游戏正在维护中，请选择其他游戏";

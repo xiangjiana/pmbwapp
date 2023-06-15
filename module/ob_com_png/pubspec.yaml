@@ -1,0 +1,93 @@
+name: ob_com_png
+description: ob_com_png.
+version: 1.0.0
+repository: https://github.com
+issue_tracker: https://github.com
+homepage: https://github.com
+documentation: https://github.com
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: 2.0.1
+  build_runner:
+  flutter_gen_runner:
+
+flutter_gen:
+  output: lib/gen/
+  line_length: 80
+  null_safety: true
+
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+
+  assets:
+    enabled: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/game/
+    - assets/game/cp/
+    - assets/game/dj/
+    - assets/game/dy/
+    - assets/game/qp/
+    - assets/game/ty/
+    - assets/game/zr/
+
+    - assets/images/
+    - assets/images/avatar/
+    - assets/images/bank/
+    - assets/images/bg/
+    - assets/images/course/
+    - assets/images/finance/
+    - assets/images/icon/
+    - assets/images/record/
+    - assets/images/venue/
+    - assets/images/error/
+    - assets/images/deposit/
+
+    - assets/test.html
+
+    - assets/road_paper/beat_plate_road/
+    - assets/road_paper/big_road/
+    - assets/road_paper/big_eye_road/
+    - assets/road_paper/small_road/
+    - assets/road_paper/xq_road/
+    - assets/road_paper/number/
+
+    - assets/vip/
+    - assets/vip/icon/
+    - assets/vip/grade/
+    - assets/welcome/
+
+    - assets/lottie/
+    - assets/gif/
+    - assets/effect/greenarrow_effect/
+    - assets/effect/greenarrow_effect/data.json
+    - assets/effect/redarrow_effect/
+    - assets/effect/redarrow_effect/data.json
+
+    - assets/skeleton/
+    - assets/abc/
+    - assets/wiki/
+
+    - assets/agent/
+    - assets/agent/icon/
+    - assets/agent/recharge/
+    - assets/agent/message/
+    - assets/agent/message/icon/
+    - assets/agent/commission/
+    - assets/agent/flyorder/
+    - assets/agent/venue/

@@ -1,0 +1,10 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/flavor/main_test.dart
+ASSET_PREFIX=qa
+BUNDLE_NAME=OB包网
+BUNDLE_DISPLAY_NAME=OB包网
+facebook_app_id=519530040016215
+facebook_client_token=518bab97cce0c09452cc5ff42a52a530
+zalo_app_id=2942389398681005669
+zalo_app_id_protocol=zalo-2942389398681005669

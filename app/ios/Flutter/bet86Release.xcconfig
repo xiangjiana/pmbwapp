@@ -1,0 +1,8 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/flavor/main_86bet.dart
+ASSET_PREFIX=bet86
+BUNDLE_NAME=86bet
+BUNDLE_DISPLAY_NAME=86bet
+facebook_app_id=519530040016215
+facebook_client_token=518bab97cce0c09452cc5ff42a52a530

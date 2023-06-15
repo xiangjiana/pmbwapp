@@ -1,0 +1,10 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/flavor/main_z68bet.dart
+ASSET_PREFIX=z68bet
+BUNDLE_NAME=Z68BET
+BUNDLE_DISPLAY_NAME=Z68BET
+facebook_app_id=
+facebook_client_token=
+zalo_app_id=
+zalo_app_id_protocol=

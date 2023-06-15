@@ -1,0 +1,46 @@
+name: pmbw_project
+repository:
+  type: gitlab
+  origin: https://gitlab.example.dev
+  owner: client
+  name: pmbw
+
+#sdkPath: .fvm/flutter_sdk
+
+scripts:
+  APP_Flavor:
+    name: app flavor
+    description: 生成 app flavor 端代码 跑命令前请检查 Ruby Gem Xcodeproj 是否安装
+    run: melos exec --depends-on="flutter_flavorizr" flutter pub run flutter_flavorizr
+
+  Pub_Get:
+    name: pub get
+    description: 所有package 执行 flutter pub get 命令
+    run: melos exec flutter pub get
+
+  Code_Gen:
+    name: code gen
+    description: build runner 代码生成（排除 module文件下的工程）
+    run: flutter packages pub run build_runner build --delete-conflicting-outputs
+    exec:
+      concurrency: 3
+      failFast: true
+    packageFilters:
+      dependsOn: build_runner
+      ignore: ob_com_*
+
+  App_Code_Gen:
+    name: app code gen
+    description: build runner 代码生成（排除 module文件下的工程）
+    run: melos run Code_Gen --no-select
+
+  Archive:
+    name: build apk,ipa,h5,
+    description: 打包 APK IPA H5
+    run: chmod u+r+x resources/script/flutter_build.sh && resources/script/flutter_build.sh
+
+packages:
+  - app/
+  - ui/**
+  - module/**
+  - api/**

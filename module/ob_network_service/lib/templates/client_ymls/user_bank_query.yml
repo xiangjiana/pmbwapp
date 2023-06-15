@@ -1,0 +1,54 @@
+name: query # $group/$name_$method.dart
+group: userBank # $group_apis.dart
+method: post # [get, post]
+uri: /userBank/query # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+req: { "dataType": "1" }
+
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp:
+  {
+    "data": [
+    {
+      "accountType": 0,
+      "bankBranch": "string",
+      "bankCode": "string",
+      "bankName": "string",
+      "bindNum": 0,
+      "bindStatus": 0,
+      "bindUserName": "string",
+      "blacklistStatus": 0,
+      "cardNumber": "string",
+      "city": "string",
+      "cnName": "string",
+      "createdAt": "string",
+      "createdBy": "string",
+      "dataType": 0,
+      "id": "string",
+      "isUsed": 0,
+      "merchantId": "string",
+      "province": "string",
+      "proxyWithdrawalFailNum": 0,
+      "proxyWithdrawalSuccessNum": 0,
+      "proxyWithdrawalTotalAmount": 0.0,
+      "realName": "string",
+      "remark": "string",
+      "sign": "string",
+      "status": 0,
+      "updatedAt": "string",
+      "updatedBy": "string",
+      "userId": "string",
+      "virtualAddress": "string",
+      "virtualKind": "string",
+      "virtualProtocol": "string",
+      "windControlId": "string",
+      "windControlName": "string",
+      "withdrawalFailNum": 0,
+      "withdrawalSuccessNum": 0,
+      "withdrawalTime": "string",
+      "withdrawalTotalAmount": 0.0
+    }
+  ]
+  }

@@ -1,0 +1,36 @@
+name: selectMemberAccount # $group/$name_$method.dart
+group: userApi # $group_apis.dart
+method: post # [get, post]
+uri: /userApi/selectMemberAccount # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+req:
+  {
+    "clientType": 1,
+    "occurDtEnd": "string",
+    "occurDtStart": "string",
+    "pageNum": 0,
+    "pageSize": 0
+  }
+
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp:
+  {
+    "pageNum": 0,
+    "pageSize": 0,
+    "record":
+      [
+      {
+        "amount": 0.0,
+        "changeAfter": 0.0,
+        "appType": 0,
+        "eventId": "string",
+        "occurDt": "2021-07-17T10:40:55.242Z",
+        "remark": "string",
+      },
+      ],
+    "summary": {},
+    "totalPage": 0,
+    "totalRecord": 0,
+  }

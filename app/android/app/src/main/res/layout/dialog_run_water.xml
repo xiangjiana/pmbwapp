@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rec_1d2933_radius"
+        android:minHeight="320dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/liu_shui_xiang_qing"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/iv_background"
+            app:layout_constraintTop_toTopOf="@+id/iv_background" />
+
+        <include
+            android:id="@+id/included_in_activity"
+            layout="@layout/in_activites_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_background"
+            app:layout_constraintStart_toStartOf="@+id/iv_background"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        <!--1.完成流水后客可场馆钱转出至中心钱包-->
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0.6"
+            android:text="@string/liu_shui_xiang_qing_1"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/included_in_activity"
+            app:layout_constraintStart_toStartOf="@id/included_in_activity"
+            app:layout_constraintTop_toBottomOf="@+id/included_in_activity" />
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:alpha="0.6"
+            android:text="@string/liu_shui_xiang_qing_2"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_one"
+            app:layout_constraintStart_toStartOf="@id/included_in_activity"
+            app:layout_constraintTop_toBottomOf="@+id/tv_one" />
+
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:alpha="0.6"
+            android:text="@string/liu_shui_xiang_qing_3"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_one"
+            app:layout_constraintStart_toStartOf="@id/included_in_activity"
+            app:layout_constraintTop_toBottomOf="@+id/tv_two" />
+
+
+        <TextView
+            android:id="@+id/tv_button_sure"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@mipmap/btnbg_2"
+            android:gravity="center"
+            android:text="@string/wo_zhi_dao_le"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_background"
+            app:layout_constraintEnd_toEndOf="@id/iv_background"
+            app:layout_constraintStart_toStartOf="@id/iv_background"
+            app:layout_constraintTop_toBottomOf="@+id/tv_three" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

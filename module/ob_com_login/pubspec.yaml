@@ -1,0 +1,148 @@
+name: ob_com_login
+description: ob_com_login.
+version: 1.0.0
+repository: https://github.com
+issue_tracker: https://github.com
+homepage: https://github.com
+documentation: https://github.com
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_screenutil: 5.7.0
+  sp_util: ^2.0.3
+  convert: ^3.0.1
+  pull_to_refresh: ^2.0.0
+  encrypt: ^5.0.0
+  url_launcher: ^6.0.4
+  cached_network_image: ^3.0.0
+  flutter_cache_manager: ^3.1.2
+  wechat_assets_picker: 8.4.1
+  like_button: ^2.0.2
+  sprintf: 7.0.0
+  common_utils: ^2.0.2
+  device_info: 2.0.2
+  platform_device_id: ^1.0.1
+  pretty_dio_logger: "^1.1.1"
+  flutter_image_compress:
+    git:
+      url: https://gitlab.ddyhr.com/foundation/flutter_image_compress.git
+      ref: '3931719500e7bd0c3c2f3eeedece166dbd6a86f3'
+  app_installer: ^1.1.0
+  event_bus: ^2.0.0
+  flutter_slidable: ^1.2.0
+  flutter_matrix_html: ^1.0.0
+  cool_ui: 1.3.0
+  universal_io: ^2.0.4
+
+  webview_flutter:
+    git:
+      url: https://gitlab.ddyhr.com/clients/ob_webview
+
+  get_version:
+    git:
+      url: https://github.com/Creky/get_version.git
+
+  ob_component:
+    git:
+      url: https://gitlab.ddyhr.com/clients/ob-components
+      ref: dev
+  get:
+    git:
+      url: https://gitlab.ddyhr.com/clients/getx
+      ref: 'ff6f3897646990f4d28a229747b8993c596e665a'
+
+  auto_size_text: ^2.1.0
+  path_provider: ^2.0.2
+  gt3_captcha:
+    git:
+      url: https://gitlab.ddyhr.com/clients/gt3_captcha
+      ref: develop
+  connectivity_plus: 3.0.3
+  custom_navigation_bar: ^0.8.2
+  flavor: ^2.0.0
+  vendor_auth:
+    git:
+      url: https://gitlab.ddyhr.com/foundation/vendorauth.git
+  zalo_flutter_web:
+    git:
+      url: https://gitlab.ddyhr.com/foundation/zalo_flutter_web
+      ref: main_3.0
+  sign:
+    git:
+      url: https://gitlab.ddyhr.com/clients/melos_repo.git
+      ref: justice_api
+      path: api/sign
+  models:
+    git:
+      url: https://gitlab.ddyhr.com/clients/melos_repo.git
+      ref: justice_api
+      path: api/models
+  params:
+    git:
+      url: https://gitlab.ddyhr.com/clients/melos_repo.git
+      ref: justice_api
+      path: api/params
+  exception:
+    git:
+      url: https://gitlab.ddyhr.com/clients/melos_repo.git
+      ref: justice_api
+      path: api/exception
+  common:
+    git:
+      url: https://gitlab.ddyhr.com/clients/melos_repo.git
+      ref: justice_api
+      path: api/common
+  config:
+    git:
+      url: https://gitlab.ddyhr.com/clients/melos_repo.git
+      ref: justice_api
+      path: api/config
+  user:
+    git:
+      url: https://gitlab.ddyhr.com/clients/melos_repo.git
+      ref: justice_api
+      path: api/user
+  activity:
+    git:
+      url: https://gitlab.ddyhr.com/clients/melos_repo.git
+      ref: justice_api
+      path: api/activity
+
+dependency_overrides:
+  path: 1.8.0
+  js: 0.6.5
+  dio: 5.1.1
+  xml: 6.2.2
+  collection: 1.17.0
+  get:
+    git:
+      url: https://gitlab.ddyhr.com/clients/getx
+      ref: 'ff6f3897646990f4d28a229747b8993c596e665a'
+  zalo_flutter_web:
+    git:
+      url: https://gitlab.ddyhr.com/foundation/zalo_flutter_web
+      ref: main_3.0
+
+dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: 2.0.1
+
+  repository:
+    git:
+      url: https://gitlab.ddyhr.com/clients/ob_network_service
+      ref: 'b4a53f8b5dd5cc06e00bba6953577a6fd095be24'
+  ob_com_base:
+    path: ../ob_com_base/
+  main:
+    path: ../../api/main
+
+flutter:
+  uses-material-design: true

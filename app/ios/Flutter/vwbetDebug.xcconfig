@@ -1,0 +1,10 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/flavor/main_vmbet.dart
+ASSET_PREFIX=vwbet
+BUNDLE_NAME=VWBET
+BUNDLE_DISPLAY_NAME=VWBET
+facebook_app_id=1173291483351489
+facebook_client_token=f783187cf742a4ab9b73289c932f0575
+zalo_app_id=3967005489713630043
+zalo_app_id_protocol=zalo-3967005489713630043

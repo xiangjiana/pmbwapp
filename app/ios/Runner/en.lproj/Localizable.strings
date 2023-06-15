@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  Runner
+
+  Created by Tmoson on 2022/10/10.
+  
+*/
+
+
+"alert" = "Tips";
+"alert_know" = "I got it";
+"full_screen" = "Full screen";
+"home_icon_transfer" = "Transfer";
+"confirm_exit_game" = "Are you sure you want to leave the game?";
+"cancel" = "Cancel";
+"cancel_in" = "Direct Access";
+"confirm" = "Confirm";
+"submit" = "Submit";
+"transfer_existing" = "Available";
+"deposit_one_click_recycling" = "Recycle";
+"deposit_recycling" = "Recovery in progress...";
+"my_wallet_turn_off_the_automatic_carry_in_amount" = "Whether to turn off automatic amount carryover";
+"my_wallet_enable_automatic_transfer_of_amount" = "Whether to turn on automatic carryover";
+"my_wallet_please_select_a_wallet" = "Please select wallet";
+"transfer_successful_transfer" = "Successful transfer";
+"transfer_in_activities_cannot_be_transferred_out" = "Can't transfer out in the middle of participating activities";
+"transfer_unable_to_transfer_in_during_venue_maintenance" = "Can not transfer in during the maintenance of the venue";
+"transfer_unable_to_transfer_out_during_venue_maintenance" = "Venue under maintenance";
+"transfer_cannot_be_transferred_out" = "You can't transfer out of %@ in a participating venue";
+"transfer_will_be_carried_over_to_the_entering_venue" = "The full amount of the central wallet and the recoverable venues will be brought into the entered venues";
+"transfer_bring_in_the_amount" = "The amount is automatically brought in when entering the venue";
+"transfer_select_wallet" = "Select Wallet";
+"from" = "From";
+"to" = "to";
+"transfer_to_be_selected_to_transfer_out_wallet" = "To be selected to transfer out of the wallet";
+"transfer_click_to_select" = "Click to select";
+"you_are_join_activity_can_not_transfer_out" = "You are still participating in the activities, after the transfer amount, the flow of water does not reach the standard will not be transferred out!";
+"mine_center_wallet" = "Center Wallet";
+"agent_transfer_transfer_money" = "Transfer Amount";
+"mine_center_wallet_transfer_existing" = "Center Wallet Available";
+"vip_level_trans_all" = "Full amount";
+"withdraw_maximum_amount" = "Max";
+"vip_level_trans_hintText" = "Please enter";
+"vip_level_trans_confirm" = "Transfer Now";
+"withdraw_flowing_water_details" = "Streaming Details";
+"vip_level_submit_active" = "Participate in activities";
+"my_wallet_required_running_water" = "Required Turnover";
+"withdraw_flow_has_been_completed" = "Completed Turnover";
+"water_flow_content_tips" = "1. After completing the flow, you can transfer the money from the venue to the center wallet\n\n2. Before the completion of the flow, transferring money to the venue will increase the flow requirement, and the money will not be transferred out if the required flow is not met\n\n3. The flow of the event venue will not be double-counted with the flow of other events";
+"transfer_in_amount" = "Transfer Amount";
+"search_in_maintenance" = "Under Maintenance";
+"need_any_help" = "For help, please";
+"contact_customer_service" = "Contact Customer Service";
+"game_join" = "Enter";
+"maintain" = "Maintenance";
+"game_in_maintain" = "该场馆正在维护中，请选择其他场馆";
+"game_in_maintain2" = "该游戏正在维护中，请选择其他游戏";
+

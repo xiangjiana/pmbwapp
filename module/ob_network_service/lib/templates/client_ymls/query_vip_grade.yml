@@ -1,0 +1,54 @@
+name: queryVipGrade # $group/$name_$method.dart
+group: vip # $group_apis.dart
+method: post # [get, post]
+uri: /memberVipGrade/queryVipGrade # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp: {
+  "data":[
+  {
+    "relegationWater": 95,
+    "id": -31876838,
+    "vipGradeName": "我克金严界",
+    "tatalValidWater": 56,
+    "merchantId": -38411129,
+    "vipSerialNum": "16",
+    "totalDeposit": 44,
+    "relegationValidPeriod": 73371471
+  },
+  {
+    "merchantId": -7322971,
+    "relegationValidPeriod": 43033374,
+    "relegationWater": 94,
+    "vipGradeName": "比越可争名前历",
+    "tatalValidWater": 75,
+    "id": -84057965,
+    "totalDeposit": 83,
+    "vipSerialNum": "89"
+  },
+  {
+    "tatalValidWater": 17,
+    "relegationValidPeriod": -55868347,
+    "vipGradeName": "与商高期才",
+    "id": -81178001,
+    "merchantId": 25625373,
+    "totalDeposit": 53,
+    "relegationWater": 12,
+    "vipSerialNum": "54"
+  },
+  {
+    "vipGradeName": "合八位王果即天",
+    "vipSerialNum": "49",
+    "merchantId": 27546570,
+    "totalDeposit": 1,
+    "tatalValidWater": 69,
+    "relegationWater": 89,
+    "relegationValidPeriod": -9244580,
+    "id": 65647632
+  }
+  ]
+}
+

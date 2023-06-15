@@ -1,0 +1,75 @@
+name: selectVipInfo # $group/$name_$method.dart
+group: userApi # $group_apis.dart
+method: post # [get, post]
+uri: /userApi/selectVipInfo # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+req: { "username": "string" }
+
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp:
+  {
+    "listGrade":
+      [
+        {
+          "id": 0,
+          "merchantId": 0,
+          "relegationValidPeriod": 0,
+          "relegationWater": 0.0,
+          "tatalValidWater": 0.0,
+          "totalDeposit": 0.0,
+          "vipGradeName": "string",
+          "vipSerialNum": "string",
+        },
+      ],
+    "listIn":
+      [
+        {
+          "aboveMonthRedEnvelope": 0.0,
+          "belowMonthRedEnvelope": 0.0,
+          "birthdayBonus": 0.0,
+          "dayWithdrawalNum": 0,
+          "dayWithdrawalQuota": 0.0,
+          "id": 0,
+          "upgradeBonus": 0.0,
+          "vipGradeName": "string",
+          "vipSerialNum": "string",
+        },
+      ],
+    "listPromotion":
+      [
+        {
+          "bonusRatio": 0.0,
+          "gameName": "string",
+          "highestBonus": 0.0,
+          "id": 0,
+          "lowestTransferQuota": 0.0,
+          "merchantId": 0,
+          "participateNum": 0,
+          "participateVenue": "string",
+          "vipGradeName": "string",
+          "vipSerialNum": "string",
+          "waterMultiple": 0,
+        },
+      ],
+    "listRebate":
+      [
+        {
+          "accessInfo": "string",
+          "configVipRebate": "string",
+          "createdAt": "2021-09-16T11:20:58.306Z",
+          "createdBy": "string",
+          "defaultType": 0,
+          "gameId": 0,
+          "gameName": "string",
+          "id": 0,
+          "merchantId": 0,
+          "sign": "string",
+          "updatedAt": "2021-09-16T11:20:58.306Z",
+          "updatedBy": "string",
+          "venueId": 0,
+          "venueName": "string",
+        },
+      ],
+  }

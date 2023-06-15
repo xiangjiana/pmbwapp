@@ -1,0 +1,14 @@
+name: getVirtualRate # $group/$name_$method.dart
+group: typay # $group_apis.dart
+method: post # [get, post]
+uri: /typay/getVirtualRate # uri
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp:
+  {
+
+    "memberDepositRate": 0.0,
+    "memberWithdrawRate": 0.0,
+    "proxyDepositRate": 0.0,
+    "proxyWithdrawRate": 0.0,
+  }

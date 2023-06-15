@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="OB包网">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="icons/Icon-192.png" type="image/x-icon" />
+
+  <title>OB包网</title>
+  <link rel="manifest" href="manifest.json">
+  <link type="text/css" href="./style.css?t=222" rel="stylesheet">
+  <link type="text/css" href="./loading.css?t=222" rel="stylesheet">
+  <script src="./vconsole.min.js"></script>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="./easy.qrcode.min.js"></script>
+  <script src="./tools.js?t=220"></script>
+  <script src="./dart_js_connector.js?t=222"></script>
+  <script>
+    var appBuildUUID="main.dart.js";//会在每次打包时候被脚本替换
+  </script>
+  <script src="./main_js_loader.js?t=2"></script>
+  <script>
+    //禁止弹出“是否添加到主屏幕”
+    window.addEventListener("beforeinstallprompt", (e => {
+        e.preventDefault();
+    }));
+    //判断访问终端
+    var browser = {
+      versions: function () {
+        var u = navigator.userAgent, app = navigator.appVersion;
+        return {
+          trident: u.indexOf('Trident') > -1, //IE内核
+          presto: u.indexOf('Presto') > -1, //opera内核
+          webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+          gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+          mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+          ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+          android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+          iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+          iPad: u.indexOf('iPad') > -1, //是否iPad
+          webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+          weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+          qq: u.match(/\sQQ/i) == " qq" //是否QQ
+        };
+      }(),
+      language: (navigator.browserLanguage || navigator.language).toLowerCase()
+    }
+    //如果不是移动端打开的，那么重定向到pc版本
+    // if (!browser.versions.mobile) {
+    //     window.location.href = "https://obqj-web-pc.test.zhanggao223.com/home";
+    // }
+    //供dart端调用的开启vConsole的方法
+    function enableVConsole() {
+      var vConsole = new window.VConsole();
+    }
+    setTimeout(function () {
+      document.getElementsByClassName("loadingarea")[0].remove();
+    }, 20 * 1000);
+    function getQueryString(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) {
+        return decodeURIComponent(r[2]);
+      }
+      return '';
+    }
+    sessionStorage.setItem("i_code", getQueryString("i_code"));
+    //设置语言回调,languageData:{key:value}
+    function setLanguageData(languageData) {
+      languageData=JSON.parse(languageData);
+      window.languageData=languageData;
+      window.parent.languageData=languageData;
+      if(languageData.appName){
+        $("meta[name='apple-mobile-web-app-title']").attr("content",languageData.appName)
+        $("meta[name='description']").attr("content",languageData.appName)
+        setTimeout(() => {
+          document.title=languageData.appName;
+          $("title").text(languageData.appName)
+        }, 50);
+        if(window!=top){
+          $("meta[name='apple-mobile-web-app-title']",window.parent.document).attr("content",languageData.appName)
+          $("meta[name='description']",window.parent.document).attr("content",languageData.appName)
+          setTimeout(() => {
+            $("title",window.parent.document).text(languageData.appName)
+            top.document.title=languageData.appName;
+          }, 50);
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="loadingarea">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+  <div id="qrcode"></div>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+        checkScreenOrientation();
+        setTimeout(function () {
+          hideMsInputEye();
+        }, 1000);
+      });
+    }
+    function checkScreenOrientation(params) {
+      if(window.orientation==90||window.orientation==-90){
+        alert(languageData&&languageData.keep_screen_vertical_for_good_experience||"为了您的良好体验，请将手机/平板竖屏操作");
+        window.location.href=window.location.href;
+      }
+    }
+    //隐藏微软浏览器输入框密码的眼睛,因为是shadowRoot外部css不生效
+    function hideMsInputEye(params) {
+      let shadowRoot = document.getElementsByTagName("flt-glass-pane")[0].shadowRoot;
+      let style = document.createElement("style");
+      style.type = "text/css";
+      style.innerHTML = `
+              input[type="password"]::-ms-reveal{
+              display: none;
+              }
+              input[type="password"]::-ms-clear{
+                  display: none;
+              }
+              input[type="password"]::-o-clear{
+                  display: none;
+              }
+              flt-scene-host{
+                touch-action: pan-down;
+                overscroll-behavior: contain;
+              }
+              flt-clip{
+                touch-action: pan-down;
+                overscroll-behavior: contain;
+              }
+              flt-offset{
+                touch-action: pan-down;
+                overscroll-behavior: contain;
+              }
+              @keyframes fadeIn1 {
+                  from {
+                      opacity: 0;
+                  }
+                  to {
+                      opacity: 1;
+                  }
+              }
+      `;
+      shadowRoot.appendChild(style);
+    }
+  </script>
+  <script>
+    //阻止iOS浏览器下滑触发浏览器自带刷新
+    document.body.addEventListener('touchmove',function (event) {
+    	event.preventDefault()
+    },{passive:false})
+    //获取iOS大版本号比如12 13 14
+    function getIOSBigVersion(params) {
+      try {
+        const ua = navigator.userAgent.toLowerCase();
+        var reg = /os [\d._]*/gi;
+        var verinfo = ua.match(reg);
+        var version = (verinfo + "").replace(/[^0-9|_.]/ig, "").replace(/_/ig, ".");
+        var arr = version.split(".");
+        return arr[0];
+      } catch (error) {
+        
+      }
+    }
+    let iosBigVersion=getIOSBigVersion();
+    //存储iOS版本号供dart使用
+    sessionStorage.setItem("iosBigVersion", iosBigVersion);
+    //对于iOS12以及12以下的，屏幕方向改变后页面不能自适应并且出现页面被屏幕宽度截断，因此做这样的处理
+    if(iosBigVersion&&Number.parseInt(iosBigVersion)<=12){
+      window.addEventListener("orientationchange",(e)=>{
+          if(e.isTrusted){
+            setTimeout(() => {
+              window.dispatchEvent(new Event("resize"))
+              window.dispatchEvent(new Event("orientationchange"))
+            }, 200);
+          }
+      });
+    }
+    //对于iOS12的某些版本，验证码在第二次以后弹不出来，这里通过把它的iframe挪到正常的dom下，解决这个问题
+    function moveWebcapture() {
+      if(getIOSBigVersion()==12){
+        document.body.appendChild(document.getElementById("webcapture"));
+      }
+    }
+    function removeWebcapture() {
+      if(getIOSBigVersion()==12){
+        document.getElementById("webcapture").remove();
+      }
+    }
+    //根据url传的lang参数预先设置flutter的语言
+    (function setFlutterLang() {
+      let lang=getQueryString("lang");
+      if(lang){
+        //如果lang包含_下划线那么就是包含语言代码和国家代码
+        if(lang.includes("_")&&lang.split("_").length==2){
+          let languageCode=lang.split("_")[0];
+          let countryCode=lang.split("_")[1];
+          languageCode=JSON.stringify(languageCode);
+          countryCode=JSON.stringify(countryCode);
+          lang=JSON.stringify(lang);
+          localStorage.setItem("flutter.langCode_dev",languageCode);
+          localStorage.setItem("flutter.saveLocaleLanguageCode",languageCode);
+          localStorage.setItem("flutter.countryCode_dev",countryCode);
+          localStorage.setItem("flutter.saveLocaleCountryCode",countryCode);
+          localStorage.setItem("flutter.LanguageCode",lang);
+        }else{
+          lang=JSON.stringify(lang);
+          localStorage.removeItem("flutter.countryCode_dev")
+          localStorage.removeItem("flutter.saveLocaleCountryCode")
+          localStorage.setItem("flutter.langCode_dev",lang);
+          localStorage.setItem("flutter.saveLocaleLanguageCode",lang);
+          localStorage.setItem("flutter.LanguageCode",lang);
+        }
+      }
+    })();
+  </script>
+</body>
+<script src="./screen_orientation.js?t=1"></script>
+
+</html>

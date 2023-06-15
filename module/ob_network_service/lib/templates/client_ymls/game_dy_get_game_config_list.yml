@@ -1,0 +1,10 @@
+name: getGameConfigList # $group/$name_$method.dart
+group: game # $group_apis.dart
+method: post # [get, post]
+uri: /game/dy/getGameConfigList # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp: {"data":{}}
+

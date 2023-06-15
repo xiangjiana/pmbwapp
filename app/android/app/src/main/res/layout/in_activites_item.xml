@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/iv_activity_back"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/round_rec_white_trans4_all_radius"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/tv_activity_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:alpha="0.6"
+        android:text="@string/can_yu_huo_dong"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_activity_flow"
+        app:layout_constraintStart_toStartOf="@+id/iv_activity_back"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/iv_activity_back" />
+
+    <TextView
+        android:id="@+id/tv_activity_flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:text="@string/suo_xu_liu_shui"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_activity_finish_flow"
+        app:layout_constraintStart_toStartOf="@+id/tv_activity_name"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_activity_name" />
+
+    <TextView
+        android:id="@+id/tv_activity_finish_flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:text="@string/yi_wan_cheng_liu_shui"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_activity_back"
+        app:layout_constraintStart_toStartOf="@+id/tv_activity_name"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_activity_flow" />
+
+    <TextView
+        android:id="@+id/tv_value_activity_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="vipxxxxxx"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:gravity="right"
+        app:layout_constraintBottom_toTopOf="@+id/tv_value_activity_flow"
+        app:layout_constraintEnd_toEndOf="@+id/iv_activity_back"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/iv_activity_back" />
+
+    <TextView
+        android:id="@+id/tv_value_activity_flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="10000,000,00"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:gravity="right"
+        app:layout_constraintBottom_toTopOf="@+id/tv_value_activity_finish_flow_per"
+        app:layout_constraintEnd_toEndOf="@+id/tv_value_activity_name"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_value_activity_name" />
+
+    <TextView
+        android:id="@+id/tv_value_activity_finish_flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="100000.00"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_value_activity_finish_flow_per"
+        app:layout_constraintEnd_toStartOf="@+id/tv_value_activity_finish_flow_per"
+        app:layout_constraintTop_toTopOf="@+id/tv_value_activity_finish_flow_per" />
+
+    <TextView
+        android:id="@+id/tv_value_activity_finish_flow_per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50%"
+        android:textColor="@color/color_3E1A100"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_activity_back"
+        app:layout_constraintEnd_toEndOf="@+id/tv_value_activity_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_value_activity_flow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

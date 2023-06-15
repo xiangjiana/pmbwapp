@@ -1,0 +1,10 @@
+name: pmbw_workspace
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependency_overrides:
+  melos: ^3.0.1
+
+dev_dependencies:
+  melos: ^3.0.1

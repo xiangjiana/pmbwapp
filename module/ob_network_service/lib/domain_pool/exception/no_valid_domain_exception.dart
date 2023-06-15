@@ -1,0 +1,1 @@
+class NoValidDomainException implements Exception {}

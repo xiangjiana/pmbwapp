@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="progress_color">#FF5722</color>
+    <color name="color_151E25">#151E25</color>
+    <color name="white_trans30">#4DFFFFFF</color>
+    <color name="white_trans20">#33FFFFFF</color>
+    <color name="white_trans10">#1aFFFFFF</color>
+    <color name="white_trans6">#1aFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_FF9047">#FF9047</color>
+    <color name="color_FF5722">#FF5722</color>
+    <color name="color_1D2933">#1D2933</color>
+    <color name="color_0E1519">#0E1519</color>
+    <color name="white_trans4">#0dFFFFFF</color>
+    <color name="color_342b2b">#342b2b</color>
+    <color name="color_E1A100">#E1A100</color>
+    <color name="color_0E1519_trans30">#330E1519</color>
+    <color name="color_33FF5722">#33FF5722</color>
+    <color name="color_3E1A100">#E1A100</color>
+    <color name="color_1d2933">#1d2933</color>
+    <color name="color_AFFFFFF">#0AFFFFFF</color>
+
+    <color name="color_FF9047_tr60">#99FF9047</color>
+    <color name="color_FF5722_tr60">#99FF5722</color>
+    <color name="white_tr60">#99FFFFFF</color>
+    <color name="color_131E26">#131E26</color>
+    <color name="color_585F65">#585F65</color>
+    <color name="color_01000000">#01000000</color>
+    <color name="black_tr10">#1A000000</color>
+    <color name="color_0A7B0E">#0A7B0E</color>
+    <color name="color_3BC117">#3BC117</color>
+    <color name="color_1A3BC117">#2E3BC117</color>
+    <color name="color_99151E25">#99151E25</color>
+    <color name="color_1A0E1519">#1A0E1519</color>
+
+</resources>

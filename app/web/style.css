@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+body,
+html {
+    padding: 0;
+    margin: auto 0;
+}
+
+body,
+html,
+flt-glass-pane {
+    overscroll-behavior: contain;
+    touch-action: pan-down;
+}
+#webcapture {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+    5% {
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    100% {
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+/*内嵌iframe加载第三方网页的样式*/
+#iframeWrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: white;
+    display: none;
+  }
+
+  #iframeWrapper iframe {
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background: white;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+
+  #iframeWrapper .topbar {
+    position: relative;
+    width: 100vw;
+    height: 50px;
+    background-color: #333;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    z-index: 1001;
+  }
+  .topbar{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+  }
+  .topbar>span:nth-child(1){
+    font-size: 20px;
+  }
+  .topbar>span:nth-child(2){
+    flex: 1;
+  }
+  .topbar>span{
+    margin: 0 10px;
+  }

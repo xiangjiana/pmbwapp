@@ -1,0 +1,66 @@
+# melos_managed_dependency_overrides: activity,bank,capital,common,config,encrypt_interceptor,exception,flutter_interceptor,game,interceptor,main,message,models,ob_com_base,ob_com_finance,ob_com_http,ob_com_login,ob_com_png,ob_component,params,record,repository,setting,sign,user,vip,wallet,html,js,xml,intl,extended_image_library,collection,zalo_flutter_web
+dependency_overrides:
+  activity:
+    path: ../api/activity
+  bank:
+    path: ../api/bank
+  capital:
+    path: ../api/capital
+  common:
+    path: ../api/common
+  config:
+    path: ../api/config
+  encrypt_interceptor:
+    path: ../api/encrypt_interceptor
+  exception:
+    path: ../api/exception
+  flutter_interceptor:
+    path: ../api/flutter_interceptor
+  game:
+    path: ../api/game
+  interceptor:
+    path: ../api/interceptor
+  main:
+    path: ../api/main
+  message:
+    path: ../api/message
+  models:
+    path: ../api/models
+  ob_com_base:
+    path: ../module/ob_com_base
+  ob_com_finance:
+    path: ../module/ob_com_finance
+  ob_com_http:
+    path: ../module/ob_com_http
+  ob_com_login:
+    path: ../module/ob_com_login
+  ob_com_png:
+    path: ../module/ob_com_png
+  ob_component:
+    path: ../ui/ob-components
+  params:
+    path: ../api/params
+  record:
+    path: ../api/record
+  repository:
+    path: ../module/ob_network_service
+  setting:
+    path: ../api/setting
+  sign:
+    path: ../api/sign
+  user:
+    path: ../api/user
+  vip:
+    path: ../api/vip
+  wallet:
+    path: ../api/wallet
+  html: 0.15.3
+  js: 0.6.5
+  xml: 6.2.2
+  intl: 0.18.0
+  extended_image_library: 3.4.2
+  collection: 1.17.0
+  zalo_flutter_web:
+    git:
+      url: https://gitlab.ddyhr.com/foundation/zalo_flutter_web
+      ref: main_3.0

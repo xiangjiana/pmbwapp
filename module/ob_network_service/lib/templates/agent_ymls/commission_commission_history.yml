@@ -1,0 +1,88 @@
+name: commissionCommissionHistory # $group/$name_$method.dart
+group: proxy # $group_apis.dart
+method: post # [get, post]
+uri: /commission/commissionHistory # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+req:
+  {
+  "pageNum": 0,
+  "pageSize": 0,
+  "payoutStatus": 0,
+  "period": 202107
+  }
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp: {
+  "record": [
+  {
+    "commissionAmount": 31.00,
+    "commissionOnlyAmount": 87.00,
+    "commissionRate": 67.00,
+    "contractId": "-98643030",
+    "contractLevel": -98643030,
+    "maxLevels": -98643030,
+    "orderStatus": -94443639,
+    "contractRebate":100,
+    "notPayAmount": 100.00,
+    "payoutStatus": 73908755,
+    "proxyAccount": "tempor",
+    "proxyId": "8413452",
+    "proxyLevelId": 36451611,
+    "proxyVipLevel": 1,
+    "proxyVipLevelName": "string",
+    "proxyVipLevelRate": 24.00,
+    "reportYm": 10324219,
+    "rewardAmount": 55.00,
+    "totalAdjustAmount": 16.00,
+    "totalChildCommissionAmount": 47.00,
+    "totalDiscountAmount": 66.00,
+    "totalLastAmount": 97.00,
+    "totalNetAmount": 87.00,
+    "totalPersonCommissionAmount": 15.00,
+    "totalPlatformAmount": 41.00,
+    "totalPureAmount": 89.00,
+    "totalRebateAmount": 30.00,
+    "totalRushAmount": 33.00,
+    "totalProxyRebateAmount": 5.00,
+    "monthActiveNum": 0,
+    "monthEffecactiveNumNew": 0
+  }
+  ],
+  "pageNum": 1,
+  "totalPage": 1,
+  "totalRecord": 1,
+  "summary": {
+    "commissionAmount": 25.00,
+    "commissionOnlyAmount": 26.00,
+    "commissionRate": 43.00,
+    "contractId": "1",
+    "contractLevel": 1,
+    "maxLevels": -944249,
+    "orderStatus": -22290100,
+    "contractRebate":100,
+    "payoutStatus": 37681524,
+    "proxyAccount": "fugiat",
+    "proxyId": "-47772347",
+    "proxyLevelId": 75275244,
+    "proxyVipLevel": 1,
+    "proxyVipLevelName": "string",
+    "proxyVipLevelRate": 50.00,
+    "reportYm": -98343907,
+    "rewardAmount": 45.00,
+    "totalAdjustAmount": 79.00,
+    "totalChildCommissionAmount": 33.00,
+    "totalDiscountAmount": 62.00,
+    "totalLastAmount": 81.00,
+    "totalNetAmount": 91.00,
+    "totalPersonCommissionAmount": 15.00,
+    "totalPlatformAmount": 5.00,
+    "totalPureAmount": 39.00,
+    "totalRebateAmount": 96.00,
+    "totalRushAmount": 90.00,
+    "totalProxyRebateAmount": 99.00,
+    "monthActiveNum": 0,
+    "monthEffecactiveNumNew": 0
+  },
+  "pageSize": 86331558
+}

@@ -1,0 +1,41 @@
+# melos_managed_dependency_overrides: activity,common,config,exception,main,models,ob_com_base,ob_com_png,ob_component,params,repository,sign,user,path,js,dio,xml,collection,get,zalo_flutter_web
+dependency_overrides:
+  activity:
+    path: ../../api/activity
+  common:
+    path: ../../api/common
+  config:
+    path: ../../api/config
+  exception:
+    path: ../../api/exception
+  main:
+    path: ../../api/main
+  models:
+    path: ../../api/models
+  ob_com_base:
+    path: ../ob_com_base
+  ob_com_png:
+    path: ../ob_com_png
+  ob_component:
+    path: ../../ui/ob-components
+  params:
+    path: ../../api/params
+  repository:
+    path: ../ob_network_service
+  sign:
+    path: ../../api/sign
+  user:
+    path: ../../api/user
+  path: 1.8.0
+  js: 0.6.5
+  dio: 5.1.1
+  xml: 6.2.2
+  collection: 1.17.0
+  get:
+    git:
+      url: https://gitlab.ddyhr.com/clients/getx
+      ref: ff6f3897646990f4d28a229747b8993c596e665a
+  zalo_flutter_web:
+    git:
+      url: https://gitlab.ddyhr.com/foundation/zalo_flutter_web
+      ref: main_3.0

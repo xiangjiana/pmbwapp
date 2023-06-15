@@ -1,0 +1,107 @@
+name: clientConfigAll # $group/$name_$method.dart
+group: config # $group_apis.dart
+method: post # [get, post]
+uri: /config/clientConfigAll # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+req: { "resourcesType": 0 }
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp:
+  {
+    "bankCodeDtoList": [
+    {
+      "bankCode": "string",
+      "bankName": "string"
+    }
+    ],
+    "configAnnouncementList":
+      [
+      {
+        "announcementAging": 0,
+        "announcementContent": "string",
+        "announcementTitle": "string",
+        "createdAt": "2021-10-22T09:05:55.062Z",
+        "createdBy": "string",
+        "downTime": "string",
+        "id": "string",
+        "merchantId": "string",
+        "status": 0,
+        "tag": 0,
+        "terminal": "string",
+        "upTime": "string",
+        "updatedAt": "2021-10-22T09:05:55.063Z",
+        "updatedBy": "string"
+      },
+      ],
+    "configBannerRespDTOList":
+      [
+      {
+        "areaType": 0,
+        "bannerName": "string",
+        "bannerTime": "string",
+        "bannerValidity": 0,
+        "clientType": 0,
+        "downTime": "string",
+        "gameCode": "string",
+        "id": "string",
+        "isLink": 0,
+        "linkTarget": 0,
+        "merchantId": "string",
+        "pictureUrl": "string",
+        "sort": 0,
+        "status": 0,
+        "targetUrl": "string",
+        "upTime": "string",
+      },
+      ],
+    "configDictInfoList":
+      [{ "description": "string", "key": "string", "value": "string" }],
+    "configPublicResourcesList":
+      [
+      {
+        "createdAt": "string",
+        "createdBy": "string",
+        "id": "string",
+        "merchantId": "string",
+        "remark": "string",
+        "resourcesType": 0,
+        "resourcesUrl": "string",
+        "updatedAt": "string",
+        "updatedBy": "string",
+      },
+      ],
+    "configStartPageList":
+      [
+      {
+        "clientType": 0,
+        "configType": 0,
+        "createdAt": "string",
+        "createdBy": "string",
+        "id": "string",
+        "loadStatus": 0,
+        "merchantId": "string",
+        "pageName": "string",
+        "pictureUrl": "string",
+        "remark": "string",
+        "status": 0,
+        "updatedAt": "string",
+        "updatedBy": "string",
+      },
+      ],
+    "configStartPageRespDTOList":
+      [
+      {
+        "clientType": 0,
+        "configType": 0,
+        "flashTime": "string",
+        "id": "string",
+        "loadStatus": 0,
+        "merchantId": "string",
+        "pageName": "string",
+        "pictureUrl": "string",
+        "remark": "string",
+        "status": 0,
+      },
+      ],
+  }

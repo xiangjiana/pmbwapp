@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@mipmap/btnbg_2"/>
+
+    <item android:state_selected="false" >
+        <layer-list>
+            <item android:drawable="@mipmap/btnbg_2"/>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="2dp" />
+                    <solid android:color="@color/color_0E1519_trans30" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

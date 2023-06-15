@@ -1,0 +1,39 @@
+name: ob_com_http
+description: ob_com_http.
+version: 1.0.0
+repository: https://github.com
+issue_tracker: https://github.com
+homepage: https://github.com
+documentation: https://github.com
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.2
+  models:
+    git:
+      url: https://gitlab.ddyhr.com/clients/melos_repo.git
+      ref: justice_api
+      path: api/models
+
+dependency_overrides:
+  collection: 1.17.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+
+  dio: 5.1.1
+
+  repository:
+    git:
+      url: https://gitlab.ddyhr.com/clients/ob_network_service
+      ref: develop
+  get:
+    git:
+      url: https://gitlab.ddyhr.com/clients/getx
+      ref: 'ff6f3897646990f4d28a229747b8993c596e665a'

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--本xml为设计稿定义主题色，仅供主题色配置-->
+
+    <!--主色-->
+    <color name="color_main">#68CE15</color>
+    <color name="color_main1">#3BC117</color>
+    <!--点缀色-->
+    <color name="color_embellish">#E1A100</color>
+
+    <!--背景色-->
+    <color name="color_background">#151E25</color>
+    <!--辅助色-->
+    <color name="color_assist">#69E300</color>
+
+    <!--主色渐变-->
+    <color name="color_main_gradient1">#FF9047</color>
+    <color name="color_main_gradient2">#FF5722</color>
+    <!--点缀色渐变-->
+    <color name="color_embellish_gradient1">#CACA00</color>
+    <color name="color_embellish_gradient1">#E1A100</color>
+
+    <!--文字用色-->
+    <color name="color_text_white100">#FFFFFFFF</color>
+    <color name="color_text_white60">#99FFFFFF</color>
+    <color name="color_text_white30">#4DFFFFFF</color>
+
+    <!--分割线用色-->
+    <color name="color_line_white10">#1AFFFFFF</color>
+    <!--分割线用色-->
+    <color name="color_line_white6">#0FFFFFFF</color>
+    <!--卡片底用色-->
+    <color name="color_card_bg_white4">#0AFFFFFF</color>
+    <!--分割间距-->
+    <color name="color_split_white10">#0E1519</color>
+
+
+    <!--theme util-->
+	<color name="color_black0">#00000000</color>
+    <color name="color_black1">#FF1F2932</color>
+    <color name="color_black2">#FF20262c</color>
+    <color name="color_black3">#ff171e24</color>
+    <color name="color_black4">#ff1D2933</color>
+	<color name="color_black5">#0000000D</color>
+	
+    <!-- color -->
+    <!--消息提示点颜色-->
+    <color name="red_FF5722">#ffFF5722</color>
+	
+	<!--邀请活动渐变色-->
+	<color name="color_bg_gold20">#EFCA9D33</color>
+	<color name="color_gold_gradient1">#EABE90FF</color>
+    <color name="color_gold_gradient2">#F9E6B900</color>
+
+	<color name="color_orange10">#FF57221A</color>
+	<color name="color_blue100">#48A5FFFF</color>
+
+	
+
+</resources>

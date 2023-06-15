@@ -1,0 +1,45 @@
+name: lowerMemberGameRecords # $group/$name_$method.dart
+group: proxy # $group_apis.dart
+method: post # [get, post]
+uri: /lowerMember/gameRecords # uri
+
+# 入参序列化使用，此处将会自动生成对应的 model，并实现 fromJson toJson 方法。model 名为 req_xxx_model.dart
+req:
+  {
+    "betStatus": "string",
+    "createAtEnd": "2021-10-20 00:00:00",
+    "createAtStart": "2021-10-10 00:00:00",
+    "gameCode": "string",
+    "id": "string",
+    "orderType": 0,
+    "pageNum": 0,
+    "pageSize": 0,
+    "userName": "string",
+  }
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp:
+  {
+    "pageNum": 0,
+    "pageSize": 0,
+    "record":
+      [
+        {
+          "betAmount": 0.00,
+          "createAt": "string",
+          "gameCode": "string",
+          "gameTypeName": "string",
+          "id": "string",
+          "memberName": "string",
+          "netAmount": 0.00,
+          "netAt": "string",
+          "obBetStatus": 0,
+          "playerName": "string",
+          "validBetAmount": 0.00,
+          "venueName": "string",
+        },
+      ],
+    "summary": {},
+    "totalPage": 0,
+    "totalRecord": 0,
+  }

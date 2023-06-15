@@ -1,0 +1,37 @@
+# melos_managed_dependency_overrides: bank,capital,common,config,exception,models,ob_com_base,ob_com_png,ob_component,params,record,repository,user,wallet,js,path,xml,get
+dependency_overrides:
+  bank:
+    path: ../../api/bank
+  capital:
+    path: ../../api/capital
+  common:
+    path: ../../api/common
+  config:
+    path: ../../api/config
+  exception:
+    path: ../../api/exception
+  models:
+    path: ../../api/models
+  ob_com_base:
+    path: ../ob_com_base
+  ob_com_png:
+    path: ../ob_com_png
+  ob_component:
+    path: ../../ui/ob-components
+  params:
+    path: ../../api/params
+  record:
+    path: ../../api/record
+  repository:
+    path: ../ob_network_service
+  user:
+    path: ../../api/user
+  wallet:
+    path: ../../api/wallet
+  js: 0.6.5
+  path: 1.8.0
+  xml: 6.2.2
+  get:
+    git:
+      url: https://gitlab.ddyhr.com/clients/getx
+      ref: ff6f3897646990f4d28a229747b8993c596e665a

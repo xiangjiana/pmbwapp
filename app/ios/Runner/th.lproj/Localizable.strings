@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Runner
+
+  Created by Tmoson on 2022/10/10.
+  
+*/
+
+
+"alert" = "เคล็ดลับ";
+"alert_know" = "ฉันเข้าใจแล้ว";
+"full_screen" = "Full screen";
+"home_icon_transfer" = "โอนเงิน";
+"confirm_exit_game" = "คุณแน่ใจหรือไม่ว่าต้องการออกจากเกม?";
+"cancel" = "ยกเลิก";
+"cancel_in" = "การเข้าถึงโดยตรง";
+"confirm" = "ยืนยัน";
+"submit" = "ส่ง";
+"transfer_existing" = "มีอยู่";
+"deposit_one_click_recycling" = "รีไซเคิล";
+"deposit_recycling" = "กำลังกู้คืน...";
+"my_wallet_turn_off_the_automatic_carry_in_amount" = "ว่าจะปิดการยกยอดอัตโนมัติหรือไม่";
+"my_wallet_enable_automatic_transfer_of_amount" = "จะเปิดการขนย้ายอัตโนมัติหรือไม่";
+"my_wallet_please_select_a_wallet" = "กรุณาเลือกกระเป๋าสตางค์";
+"transfer_successful_transfer" = "โอนสำเร็จ";
+"transfer_in_activities_cannot_be_transferred_out" = "ไม่สามารถโอนออกระหว่างกิจกรรมที่ร่วมรายการได้";
+"transfer_unable_to_transfer_in_during_venue_maintenance" = "ไม่สามารถโอนเข้าได้ระหว่างบำรุงรักษาสถานที่";
+"transfer_unable_to_transfer_out_during_venue_maintenance" = "ไม่สามารถโอนออกจากการบำรุงรักษาสถานที่ได้";
+"transfer_cannot_be_transferred_out" = "ไม่สามารถโอนออกจากสถานที่ที่ร่วมรายการได้%@";
+"transfer_will_be_carried_over_to_the_entering_venue" = "จำนวนเงินเต็มของกระเป๋าเงินกลางและสถานที่ที่สามารถกู้คืนได้จะถูกนำเข้ามาในสถานที่ที่เข้าร่วม";
+"transfer_bring_in_the_amount" = "จำนวนเงินจะถูกนำเข้าโดยอัตโนมัติเมื่อเข้าสู่สถานที่";
+"transfer_select_wallet" = "เลือกกระเป๋าเงิน";
+"from" = "จาก";
+"to" = "ถึง";
+"transfer_to_be_selected_to_transfer_out_wallet" = "ให้เลือกโอนออกจากกระเป๋า";
+"transfer_click_to_select" = "คลิกเพื่อเลือก";
+"you_are_join_activity_can_not_transfer_out" = "คุณยังคงเข้าร่วมกิจกรรมหลังจากโอนจำนวนเงินแล้วกระแสจะไม่สามารถโอนออกได้โดยไม่ถึงเป้าหมาย!";
+"mine_center_wallet" = "กระเป๋าเงินกลาง";
+"mine_center_wallet_transfer_existing" = "กระเป๋าเงินกลาง  มีอยู่";
+"agent_transfer_transfer_money" = "จำนวนเงินโอน";
+"vip_level_trans_all" = "เต็มจำนวน";
+"withdraw_maximum_amount" = "สูงสุด";
+"vip_level_trans_hintText" = "กรุณาป้อน";
+"vip_level_trans_confirm" = "โอนเลย";
+"withdraw_flowing_water_details" = "รายละเอียดการสตรีม";
+"vip_level_submit_active" = "เข้าร่วมกิจกรรม";
+"my_wallet_required_running_water" = "การไหลที่ต้องการ";
+"withdraw_flow_has_been_completed" = "เสร็จสิ้นการไหล";
+"water_flow_content_tips" = "1.โอนเสร็จสามารถโอนสถานที่เข้าเซ็นทรัลวอลเล็ทได้\n2.ก่อนเสร็จสิ้นโฟลว์ การโอนเงินไปยังสถานที่จะเพิ่มความต้องการโฟลว์ และจะไม่โอนเงินออกหากไม่เป็นไปตามโฟลว์ที่ต้องการ\n3.การไหลของสถานที่จัดงานจะไม่ถูกนับซ้ำกับลำดับเหตุการณ์อื่น";
+"transfer_in_amount" = "ยอดโอน";
+"search_in_maintenance" = "ภายใต้การบำรุงรักษา";
+"need_any_help" = "ขอความช่วยเหลือค่ะ";
+"contact_customer_service" = "ติดต่อฝ่ายบริการลูกค้า";
+"game_join" = "เข้า";
+"maintain" = "การซ่อมบำรุง";
+"game_in_maintain" = "该场馆正在维护中，请选择其他场馆";
+"game_in_maintain2" = "该游戏正在维护中，请选择其他游戏";

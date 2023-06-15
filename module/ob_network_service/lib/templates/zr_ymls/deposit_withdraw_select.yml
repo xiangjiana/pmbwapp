@@ -1,0 +1,21 @@
+name: depositWithdrawSelect # $group/$name_$method.dart
+group: zr # $group_apis.dart
+method: post # [get, post]
+uri: /mb/depositWithdraw/select # uri
+
+
+# 指定数据对象 json，自动生成 response 的对象
+# 默认创建 response 序列化使用的 adapter，用于数据序列化的手动操作。默认为直接根据 json 序列化，不存在该文件则创建，否则忽略。
+resp:
+  {
+    "data":
+      [
+        {
+          "amount": 0.0,
+          "changeAfter": 0.0,
+          "occurDt": "2021-11-12T09:45:25.178Z",
+          "remark": "string",
+          "transType": 0,
+        },
+      ],
+  }

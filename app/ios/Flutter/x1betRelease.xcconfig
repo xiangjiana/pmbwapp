@@ -1,0 +1,10 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/flavor/main_x1bet.dart
+ASSET_PREFIX=x1bet
+BUNDLE_NAME=X1 BET
+BUNDLE_DISPLAY_NAME=X1 BET
+facebook_app_id=691216802694104
+facebook_client_token=9011daed262b4744d58b22ff9b20a07a
+zalo_app_id=3992522152404984517
+zalo_app_id_protocol=zalo-3992522152404984517

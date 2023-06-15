@@ -1,0 +1,10 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/flavor/main_prodvn.dart
+ASSET_PREFIX=prodvn
+BUNDLE_NAME=OBBW
+BUNDLE_DISPLAY_NAME=OBBW
+facebook_app_id=606910577931702
+facebook_client_token=8f9b5fc9be2aa28b9e751188e819bcc1
+zalo_app_id=930648680292155014
+zalo_app_id_protocol=zalo-930648680292155014

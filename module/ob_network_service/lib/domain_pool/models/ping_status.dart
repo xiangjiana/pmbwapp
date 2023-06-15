@@ -1,0 +1,4 @@
+enum PingStatus {
+  Successful,
+  Failed,
+}

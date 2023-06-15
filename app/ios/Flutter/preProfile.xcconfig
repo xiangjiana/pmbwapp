@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/flavor/main_pre.dart
+ASSET_PREFIX=pre
+BUNDLE_NAME=OB包网
+BUNDLE_DISPLAY_NAME=OB包网

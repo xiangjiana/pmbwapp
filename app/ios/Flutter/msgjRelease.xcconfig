@@ -1,0 +1,10 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/flavor/main_msgj.dart
+ASSET_PREFIX=msgj
+BUNDLE_NAME=明商国际
+BUNDLE_DISPLAY_NAME=明商国际
+facebook_app_id=
+facebook_client_token=
+zalo_app_id=
+zalo_app_id_protocol=

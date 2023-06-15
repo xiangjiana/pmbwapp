@@ -1,0 +1,55 @@
+<html>
+<head>
+    <script>
+    function onBack(){
+        native.postMessage('{\"method\":\"back\"}');
+    }
+    function getImageFromNative(){
+        native.postMessage('{\"method\":\"getImage\",\"data\":{\"type\":\"gallery\"}}');
+
+    }
+    function openUrl0(){
+        native.postMessage('{\"method\":\"openUrl\",\"data\":{\"url\":\"http://www.bilibili.com\",\"type\":0}}');
+    }
+    function openUrl1(){
+        native.postMessage('{\"method\":\"openUrl\",\"data\":{\"url\":\"http://www.bilibili.com\",\"type\":1}}');
+    }
+    function openUrl2(){
+        native.postMessage('{\"method\":\"openUrl\",\"data\":{\"url\":\"http://www.bilibili.com\",\"type\":2}}');
+    }
+    function nativeAction(){
+        native.postMessage('{\"method\":\"showToast\",\"data\":{\"message\":\"调用Action\"}}');
+    }
+    function showActionButton(){
+        native.postMessage('{\"method\":\"showActionButton\",\"data\":{\"text\":\"H5传来的\"}}');
+    }
+    function hideActionButton(){
+        native.postMessage('{\"method\":\"hideActionButton\"}');
+    }
+
+    function getImageBack(message){
+       var imageDiv=document.getElementById("imageDiv");
+       imageDiv.innerHTML = '<img src="data:image/jpeg;base64,'+message+'\" height=\"200\"  />';
+    }
+
+
+
+
+
+    </script>
+</head>
+<body>
+<h1>测试html</h1>
+<button onclick="onBack()">返回</button>
+<button onclick="openUrl0()">当前页面打开url</button>
+<button onclick="openUrl1()">新页面打开url</button>
+<button onclick="openUrl2()">系统浏览器打开url</button>
+<button onclick="getImageFromNative()">获取图片</button>
+<button onclick="showActionButton()">显示Action</button>
+<button onclick="hideActionButton()">隐藏Action</button>
+
+<div id="imageDiv"></div>
+
+
+</body>
+</html>

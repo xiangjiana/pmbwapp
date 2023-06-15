@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+
+    <ImageView
+        android:id="@+id/iv_wallet_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/wallet_by"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_wallet_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:alpha="0.6"
+        android:ellipsize="end"
+        android:text="彩票钱包"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_wallet_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_wallet_icon" />
+
+    <TextView
+        android:id="@+id/tv_wallet_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:text="200000"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_wallet_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_wallet_name" />
+
+    <View
+        android:id="@+id/view_select"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include
+        android:id="@+id/included_in_activity"
+        layout="@layout/in_activites_item"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_wallet_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wallet_money" />
+
+    <ImageView
+        android:id="@+id/iv_wallet_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/com_select"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_wallet_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_wallet_icon" />
+
+
+    <TextView
+        android:id="@+id/tv_is_activity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:alpha="0.6"
+        android:gravity="end|center_vertical"
+        android:text="?"
+        android:maxLines="2"
+        android:textColor="@color/white_tr60"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_wallet_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/view_select"
+        app:layout_constraintEnd_toStartOf="@+id/iv_open_activity"
+        app:layout_constraintTop_toTopOf="@+id/view_select" />
+
+    <ImageView
+        android:id="@+id/iv_open_activity"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="25dp"
+        android:scaleType="matrix"
+        android:src="@mipmap/home_more_down"
+        android:tag="down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/activity_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="included_in_activity" />
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white_trans4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_wallet_name"
+        app:layout_constraintTop_toBottomOf="@+id/included_in_activity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

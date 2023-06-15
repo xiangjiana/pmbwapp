@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  Runner
+
+  Created by Tmoson on 2022/10/10.
+  
+*/
+
+
+"alert" = "Lời khuyên";
+"alert_know" = "Đã hiểu";
+"full_screen" = "Full screen";
+"home_icon_transfer" = "Chuyển Đổi";
+"confirm_exit_game" = "Bạn có chắc chắn muốn rời khỏi trò chơi không?";
+"cancel" = "Hủy bỏ";
+"cancel_in" = "Truy cập trực tiếp";
+"confirm" = "ĐƯỢC RỒI";
+"submit" = "Nộp";
+"transfer_existing" = "Có sẵn";
+"deposit_one_click_recycling" = "Chuyển Đổi";
+"deposit_recycling" = "Đang khôi phục ...";
+"my_wallet_turn_off_the_automatic_carry_in_amount" = "Có tắt tự động chuyển số tiền hay không";
+"my_wallet_enable_automatic_transfer_of_amount" = "Có bật tính năng tự động chuyển tiếp hay không";
+"my_wallet_please_select_a_wallet" = "Vui lòng chọn ví";
+"transfer_successful_transfer" = "Chuyển khoản thành công";
+"transfer_in_activities_cannot_be_transferred_out" = "Không thể chuyển ra ngoài khi đang tham gia các hoạt động";
+"transfer_unable_to_transfer_in_during_venue_maintenance" = "Không thể chuyển đến trong thời gian bảo trì địa điểm";
+"transfer_unable_to_transfer_out_during_venue_maintenance" = "Không thể chuyển ra khỏi địa điểm bảo trì";
+"transfer_cannot_be_transferred_out" = "Bạn không thể chuyển %@ tại một địa điểm tham gia";
+"transfer_will_be_carried_over_to_the_entering_venue" = "Ví trung tâm và số tiền địa điểm có thể thu hồi sẽ được chuyển đến địa điểm đã nhập";
+"transfer_bring_in_the_amount" = "Số tiền sẽ được tự động mang vào khi vào địa điểm";
+"transfer_select_wallet" = "Chọn Ví";
+"from" = "Từ";
+"to" = "đến";
+"transfer_to_be_selected_to_transfer_out_wallet" = "Được chọn để chuyển ra khỏi ví";
+"transfer_click_to_select" = "Bấm để chọn";
+"you_are_join_activity_can_not_transfer_out" = "Bạn vẫn đang tham gia các hoạt động, sau khi chuyển lượng nước, lưu lượng nước không đạt tiêu chuẩn sẽ không được chuyển ra ngoài!";
+"mine_center_wallet" = "Ví trung tâm";
+"mine_center_wallet_transfer_existing" = "Ví trung tâm Có sẵn ";
+"agent_transfer_transfer_money" = "Số tiền chuyển khoản";
+"vip_level_trans_all" = "Tất Cả";
+"withdraw_maximum_amount" = "tối đa";
+"vip_level_trans_hintText" = "Vui lòng nhập";
+"vip_level_trans_confirm" = "Chuyển ngay";
+"withdraw_flowing_water_details" = "Chi tiết phát trực tuyến";
+"vip_level_submit_active" = "Tham gia các hoạt động";
+"my_wallet_required_running_water" = "Luồng bắt buộc";
+"withdraw_flow_has_been_completed" = "Đã hoàn thành quy trình";
+"water_flow_content_tips" = "1.Sau khi hoàn thành quy trình, bạn có thể chuyển địa điểm vào ví trung tâm\n2.Trước khi hoàn thành luồng, việc chuyển tiền đến địa điểm sẽ làm tăng yêu cầu về luồng và tiền sẽ không được chuyển ra ngoài nếu luồng yêu cầu không được đáp ứng\n3.Luồng của địa điểm tổ chức sự kiện sẽ không được tính kép với luồng của các sự kiện khác";
+"transfer_in_amount" = "Số tiền chuyển khoản";
+"search_in_maintenance" = "Đang bảo trì";
+"need_any_help" = "Để được giúp đỡ, xin vui lòng";
+"contact_customer_service" = "liên hệ với dịch vụ khách hàng";
+"game_join" = "Chơi Ngay";
+"maintain" = "Sự bảo trì";
+"game_in_maintain" = "该场馆正在维护中，请选择其他场馆";
+"game_in_maintain2" = "该游戏正在维护中，请选择其他游戏";
+
