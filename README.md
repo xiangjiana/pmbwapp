@@ -1,6 +1,8 @@
 # app
 
 #纯公益项目，请勿用作其他用途，仅供flutter学习参考，如何编译Web  Android IOS 三端设备
+运行配置
+![image](https://github.com/xiangjiana/pmbwapp/assets/56538085/0e6ddc3b-3dc4-4ece-855d-62d29abf7677)
 
 
 
